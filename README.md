@@ -10,6 +10,8 @@ or prints "Item can't be sold on flea" if the item doesn't pass the flea check. 
 open one of the items there where the url follows this order "https://tarkov-market.com/item/" followed by the specific item specified. Then you need to copy the url and 
 paste it in the url place in the code. 
 
+PROBLEM: project1 works partially presumably becuase the data on the webpage changes from time to time but sometimes items that should pass the "flea" check dont pass it and just return "Item can't be sold on flea". This makes sense as a displacement is found by hand and doesn't expect the information to move around in the website so it doenst find the "₽" sign when searching through the html if the website reloads or changes. 
+
 
 test file is a program meant to interact with the "https://tarkov-market.com/tag/x" urls where x is a specific tag which has multiple items in it. The file pulls all the 
 urls from the website and organizes them in an excel document named "excel work edited.xlsx" with the urls in one column and the names in another column. 
